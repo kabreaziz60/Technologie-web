@@ -12,15 +12,17 @@ session_start();
 </head>
 
 <body>
+    
     <?php
+        include_once './../Technologie-web/components/header.php';
         if(isset($_SESSION["action"])){
             $action = $_SESSION["action"];
             switch ($action) {
                 case 'register':
-                    include_once './pages/home.php';
+                    include_once './../Technologie-web/pages/home.php';
                     break;
                 case 'login':
-                    include_once './pages/message.php';
+                    include_once './../Technologie-web/pages/message.php';
     
                 default:
                 
@@ -28,7 +30,7 @@ session_start();
             }
 
         }else{
-            include_once './pages/home.php';
+            include_once './../Technologie-web/pages/home.php';
         }
 
     ?>

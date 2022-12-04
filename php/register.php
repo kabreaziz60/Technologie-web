@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "../db/connexion.php";
+include_once "../../Technologie-web/db/connexion.php";
 
 if ($_POST["name"] && $_POST["firstname"] && $_POST["email"] && $_POST["password"]) {
     $name = $_POST["name"];
@@ -14,12 +14,12 @@ if ($_POST["name"] && $_POST["firstname"] && $_POST["email"] && $_POST["password
         //  var_dump($row) ;
         // }
         $res['error'] = 'Email déja utiliser';
-        header("Location: /");
+        header("Location: /Technologie-web/");
     } else {
         $req = mysqli_query($link, "insert into users(name, firstname, email, password) values ('$name', '$firstname', '$email', '$password')");
         if ($req) {
         $res['success'] = 'Inscription reussi veuillez vous connecter';
-        header("Location: /");
+        header("Location: /Technologie-web/");
         } else {
             echo "echec d'intersion";
         }

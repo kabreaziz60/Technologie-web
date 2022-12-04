@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,30 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../../Technologie-web/styles/home.css">
     <title>Document</title>
 </head>
 
 <body class="home-container">
-    <header>
-        <nav class="navbar">
-            <div class="navbar-container container">
-                <input type="checkbox" name="" id="">
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div>
-                <ul class="menu-items">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Message</a></li>
-                    <li><a href="#">A propos</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <h1 class="logo">Sons yam</h1>
-            </div>
-        </nav>
-    </header>
     <?php
     if ($_SESSION && $_SESSION['res']) {
         $msg = $_SESSION['res'];
@@ -61,7 +41,7 @@
                 </div>
 
                 <div class="visual">
-                    <img src="../assets/img/s4.png" alt="" />
+                    <img src="../../Technologie-web/assets/img/s4.png" alt="" />
                 </div>
             </div>
         </header>
@@ -92,7 +72,7 @@
                     </div>
                 </div>
                 <div class="visual">
-                    <img src="../assets/img/s3.PNG" alt="" />
+                    <img src="../../Technologie-web/assets/img/s3.PNG" alt="" />
                 </div>
             </div>
         </div>
@@ -109,7 +89,7 @@
 
         <!--   BTN   -->
         <a href="https://www.youtube.com/watch?v=H_rRlMSbarg" class="send-fixer-btn" target="__blank">
-            <img width="50" height="50" src="../assets/img/s4.svg" />
+            <img width="50" height="50" src="../../Technologie-web/assets/img/s4.svg" />
         </a>
 
         <!-- End Footer -->
@@ -127,7 +107,7 @@
     <!-- login modal -->
     <div id="id01" class="modal">
 
-        <form class="modal-content animate" action="../php/login.php" method="post">
+        <form class="modal-content animate" action="../../Technologie-web/php/login.php" method="post">
             <div class="imgcontainer">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                 <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
@@ -156,7 +136,7 @@
     <!-- register modal -->
     <div id="id02" class="modal">
 
-        <form class="modal-content animate" action="../php/register.php" method="post">
+        <form class="modal-content animate" action="../../Technologie-web/php/register.php" method="post">
             <div class="imgcontainer">
                 <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
                 <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
@@ -180,7 +160,7 @@
             </div>
         </form>
     </div>
-    <script src="../scripts/home.js"></script>
+    <script src="../../Technologie-web/scripts/home.js"></script>
 
 </body>
 

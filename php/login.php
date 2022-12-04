@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "../db/connexion.php";
+include_once "../../Technologie-web/db/connexion.php";
 
 if ($_POST["email"] && $_POST["password"]) {
     $email = $_POST["email"];
@@ -12,11 +12,11 @@ if ($_POST["email"] && $_POST["password"]) {
          var_dump($row) ;
          $res['success'] = 'connexion reussi';
          $res['data'] = $row;
-         header("Location: /message");
+         header("Location: /Technologie-web/");
         }
     } else {
         $res['error'] = 'Identifiant incorrect';
-        header("Location: /");
+        header("Location: /Technologie-web/");
     }
 }
 
