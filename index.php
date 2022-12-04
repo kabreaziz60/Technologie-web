@@ -12,7 +12,9 @@ session_start();
 </head>
 
 <body>
+    
     <?php
+        include_once './components/header.php';
         if(isset($_SESSION["action"])){
             $action = $_SESSION["action"];
             switch ($action) {
