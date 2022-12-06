@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "../db/connexion.php";
+include_once "../Technologie-web/db/connexion.php";
 
 if ($_POST["email"] && $_POST["password"]) {
     $email = $_POST["email"];

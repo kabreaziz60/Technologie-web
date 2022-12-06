@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../Technologie-web/styles/home.css">
     <title>Document</title>
 </head>
 
@@ -41,7 +41,7 @@
                 </div>
 
                 <div class="visual">
-                    <img src="../assets/img/s4.png" alt="" />
+                    <img src="../Technologie-web/assets/img/s4.png" alt="" />
                 </div>
             </div>
         </header>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
                 <div class="visual">
-                    <img src="../assets/img/s3.PNG" alt="" />
+                    <img src="../Technologie-web/assets/img/s3.PNG" alt="" />
                 </div>
             </div>
         </div>
@@ -107,7 +107,7 @@
     <!-- login modal -->
     <div id="id01" class="modal">
 
-        <form class="modal-content animate" action="../php/login.php" method="post">
+        <form class="modal-content animate" action="../Technologie-web/php/login.php" method="post">
             <div class="imgcontainer">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                 <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
@@ -136,7 +136,7 @@
     <!-- register modal -->
     <div id="id02" class="modal">
 
-        <form class="modal-content animate" action="../php/register.php" method="post">
+        <form class="modal-content animate" action="../Technologie-web/php/register.php" method="post">
             <div class="imgcontainer">
                 <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
                 <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
@@ -160,7 +160,7 @@
             </div>
         </form>
     </div>
-    <script src="../scripts/home.js"></script>
+    <script src="../Technologie-web/scripts/home.js"></script>
 
 </body>
 
