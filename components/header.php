@@ -22,7 +22,10 @@
                     <li><a href="#">Message</a></li>
                     <li><a href="#">A propos</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li><a href="../../Technologie-web/php/deconnexion.php">Déconnxion</a></li>
+                    <?php
+                    if(isset($_SESSION["action"]))
+                   echo "<li><a href='../../Technologie-web/php/deconnexion.php'>Déconnxion</a></li>"
+                    ?>
                 </ul>
                 <h1 class="logo">Sons yam</h1>
             </div>
