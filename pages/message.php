@@ -1,8 +1,3 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,154 +8,199 @@
     <link rel="stylesheet" href="../Technologie-web/styles/message.css">
 </head>
 <body>
-<div class="container-fluid h-100">
-			<div class="row justify-content-center h-100">
-				<div class="col-md-4 col-xl-3 chat"><div class="card mb-sm-3 mb-md-0 contacts_card">
-					<div class="card-header">
-						<div class="input-group">
-							<input type="text" placeholder="Search..." name="" class="form-control search">
-							<div class="input-group-prepend">
-								<span class="input-group-text search_btn"><i class="fas fa-search"></i></span>
-							</div>
-						</div>
-					</div>
-					<div class="card-body contacts_body">
-						<ui class="contacts">
-						<li class="active">
-							<div class="d-flex bd-highlight">
-								<div class="img_cont">
-									<img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" class="rounded-circle user_img">
-									<span class="online_icon"></span>
-								</div>
-								<div class="user_info">
-									<span>Fantech</span>
-									<p>Fantech est en ligne</p>
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="d-flex bd-highlight">
-								<div class="img_cont">
-									<img src="https://2.bp.blogspot.com/-8ytYF7cfPkQ/WkPe1-rtrcI/AAAAAAAAGqU/FGfTDVgkcIwmOTtjLka51vineFBExJuSACLcBGAs/s320/31.jpg" class="rounded-circle user_img">
-									<span class="online_icon offline"></span>
-								</div>
-								<div class="user_info">
-									<span>KABRE</span>
-									<p>KABRE en ligne il ya 7 mins</p>
-								</div>
-							</div>
-						</li>
-						
-					</div>
-					<div class="card-footer"></div>
-				</div></div>
-				<div class="col-md-8 col-xl-6 chat">
-					<div class="card">
-						<div class="card-header msg_head">
-							<div class="d-flex bd-highlight">
-								<div class="img_cont">
-									<img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" class="rounded-circle user_img">
-									<span class="online_icon"></span>
-								</div>
-								<div class="user_info">
-									<span>Discusion avec Fantech</span>
-									<p>1767 Messages</p>
-								</div>
-								<div class="video_cam">
-									<span><i class="fas fa-video"></i></span>
-									<span><i class="fas fa-phone"></i></span>
-								</div>
-							</div>
-							<span id="action_menu_btn"><i class="fas fa-ellipsis-v"></i></span>
-							<div class="action_menu">
-								<ul>
-									<li><i class="fas fa-user-circle"></i> View profile</li>
-									<li><i class="fas fa-users"></i> Add to close friends</li>
-									<li><i class="fas fa-plus"></i> Add to group</li>
-									<li><i class="fas fa-ban"></i> Block</li>
-								</ul>
-							</div>
-						</div>
-						<div class="card-body msg_card_body">
-							<div class="d-flex justify-content-start mb-4">
-								<div class="img_cont_msg">
-									<img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" class="rounded-circle user_img_msg">
-								</div>
-								<div class="msg_cotainer">
-									Salut comment tu vas ?
-									<span class="msg_time">8:40 AM, Today</span>
-								</div>
-							</div>
-							<div class="d-flex justify-content-end mb-4">
-								<div class="msg_cotainer_send">
-									bien etoi ?
-									<span class="msg_time_send">8:55 AM, Today</span>
-								</div>
-								<div class="img_cont_msg">
-							<img src="../Technologie-web/assets/img/kabre.jpg" class="rounded-circle user_img_msg">
-								</div>
-							</div>
-							<div class="d-flex justify-content-start mb-4">
-								<div class="img_cont_msg">
-									<img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" class="rounded-circle user_img_msg">
-								</div>
-								<div class="msg_cotainer">
-									bien aussi et le cours
-									<span class="msg_time">9:00 AM, Today</span>
-								</div>
-							</div>
-							<div class="d-flex justify-content-end mb-4">
-								<div class="msg_cotainer_send">
-									bien merci!
-									<span class="msg_time_send">9:05 AM, Today</span>
-								</div>
-								<div class="img_cont_msg">
-							<img src="../Technologie-web/assets/img/kabre.jpg" class="rounded-circle user_img_msg">
-								</div>
-							</div>
-							<div class="d-flex justify-content-start mb-4">
-								<div class="img_cont_msg">
-									<img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" class="rounded-circle user_img_msg">
-								</div>
-								<div class="msg_cotainer">
-									tu es a l'universiter
-									<span class="msg_time">9:07 AM, Today</span>
-								</div>
-							</div>
-							<div class="d-flex justify-content-end mb-4">
-								<div class="msg_cotainer_send">
-									non au bureau demain je viendrai
-									<span class="msg_time_send">9:10 AM, Today</span>
-								</div>
-								<div class="img_cont_msg">
-						<img src="../Technologie-web/assets/img/kabre.jpg" class="rounded-circle user_img_msg">
-								</div>
-							</div>
-							<div class="d-flex justify-content-start mb-4">
-								<div class="img_cont_msg">
-									<img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" class="rounded-circle user_img_msg">
-								</div>
-								<div class="msg_cotainer">
-									ok a demain
-									<span class="msg_time">9:12 AM, Today</span>
-								</div>
-							</div>
-						</div>
-						<div class="card-footer">
-							<div class="input-group">
-								<div class="input-group-append">
-									<span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>
-								</div>
-								<textarea name="" class="form-control type_msg" placeholder="Type your message..."></textarea>
-								<div class="input-group-append">
-									<span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
-								</div>
-							</div>
-						</div>
-					</div>
+<div id="container">
+	<aside>
+		<header>
+			<input type="text" placeholder="search">
+		</header>
+		<ul>
+			<li>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_01.jpg" alt="">
+				<div>
+					<h2>Prénom Nom</h2>
+					<h3>
+						<span class="status orange"></span>
+						offline
+					</h3>
 				</div>
+			</li>
+			<li>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_02.jpg" alt="">
+				<div>
+					<h2>Prénom Nom</h2>
+					<h3>
+						<span class="status green"></span>
+						online
+					</h3>
+				</div>
+			</li>
+			<li>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_03.jpg" alt="">
+				<div>
+					<h2>Prénom Nom</h2>
+					<h3>
+						<span class="status orange"></span>
+						offline
+					</h3>
+				</div>
+			</li>
+			<li>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_04.jpg" alt="">
+				<div>
+					<h2>Prénom Nom</h2>
+					<h3>
+						<span class="status green"></span>
+						online
+					</h3>
+				</div>
+			</li>
+			<li>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_05.jpg" alt="">
+				<div>
+					<h2>Prénom Nom</h2>
+					<h3>
+						<span class="status orange"></span>
+						offline
+					</h3>
+				</div>
+			</li>
+			<li>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_06.jpg" alt="">
+				<div>
+					<h2>Prénom Nom</h2>
+					<h3>
+						<span class="status green"></span>
+						online
+					</h3>
+				</div>
+			</li>
+			<li>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_07.jpg" alt="">
+				<div>
+					<h2>Prénom Nom</h2>
+					<h3>
+						<span class="status green"></span>
+						online
+					</h3>
+				</div>
+			</li>
+			<li>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_08.jpg" alt="">
+				<div>
+					<h2>Prénom Nom</h2>
+					<h3>
+						<span class="status green"></span>
+						online
+					</h3>
+				</div>
+			</li>
+			<li>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_09.jpg" alt="">
+				<div>
+					<h2>Prénom Nom</h2>
+					<h3>
+						<span class="status green"></span>
+						online
+					</h3>
+				</div>
+			</li>
+			<li>
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_10.jpg" alt="">
+				<div>
+					<h2>Prénom Nom</h2>
+					<h3>
+						<span class="status orange"></span>
+						offline
+					</h3>
+				</div>
+			</li>
+		</ul>
+	</aside>
+	<main>
+		<header>
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_01.jpg" alt="">
+			<div>
+				<h2>Chat with Vincent Porter</h2>
+				<h3>already 1902 messages</h3>
 			</div>
-		</div>
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_star.png" alt="">
+		</header>
+		<ul id="chat">
+			<li class="you">
+				<div class="entete">
+					<span class="status green"></span>
+					<h2>Vincent</h2>
+					<h3>10:12AM, Today</h3>
+				</div>
+				<div class="triangle"></div>
+				<div class="message">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+				</div>
+			</li>
+			<li class="me">
+				<div class="entete">
+					<h3>10:12AM, Today</h3>
+					<h2>Vincent</h2>
+					<span class="status blue"></span>
+				</div>
+				<div class="triangle"></div>
+				<div class="message">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+				</div>
+			</li>
+			<li class="me">
+				<div class="entete">
+					<h3>10:12AM, Today</h3>
+					<h2>Vincent</h2>
+					<span class="status blue"></span>
+				</div>
+				<div class="triangle"></div>
+				<div class="message">
+					OK
+				</div>
+			</li>
+			<li class="you">
+				<div class="entete">
+					<span class="status green"></span>
+					<h2>Vincent</h2>
+					<h3>10:12AM, Today</h3>
+				</div>
+				<div class="triangle"></div>
+				<div class="message">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+				</div>
+			</li>
+			<li class="me">
+				<div class="entete">
+					<h3>10:12AM, Today</h3>
+					<h2>Vincent</h2>
+					<span class="status blue"></span>
+				</div>
+				<div class="triangle"></div>
+				<div class="message">
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+				</div>
+			</li>
+			<li class="me">
+				<div class="entete">
+					<h3>10:12AM, Today</h3>
+					<h2>Vincent</h2>
+					<span class="status blue"></span>
+				</div>
+				<div class="triangle"></div>
+				<div class="message">
+					OK
+				</div>
+			</li>
+		</ul>
+		<footer>
+			<textarea placeholder="Type your message"></textarea>
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_picture.png" alt="">
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_file.png" alt="">
+			<a href="#">Send</a>
+		</footer>
+	</main>
+</div>
     
 </body>
 </html>
