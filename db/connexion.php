@@ -41,7 +41,6 @@ if(!$exists)
     PRIMARY KEY(id)
    )";
    $ok = mysqli_query($link, $usersTab);
-   var_dump($ok);
    if(!$ok){
     echo 'falled to create users table';
     die();
