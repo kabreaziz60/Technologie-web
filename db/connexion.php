@@ -11,7 +11,6 @@ mysqli_report(MYSQLI_REPORT_OFF);
 $link = mysqli_connect($server, $user, $mdp, "");
 
 if($link) {
-    echo('db connecter');
     // enable error reporting
     $testDb = mysqli_select_db($link, $db);
     if(empty($testDb)){

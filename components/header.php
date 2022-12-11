@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="../../Technologie-web/styles/header.css">
     <title>Document</title>
 </head>
+
 <body>
-<header>
+    <header>
         <nav class="navbar">
             <div class="navbar-container container">
                 <input type="checkbox" name="" id="">
@@ -23,13 +25,15 @@
                     <li><a href="#">A propos</a></li>
                     <li><a href="#">Contact</a></li>
                     <?php
-                    if(isset($_SESSION["action"]))
-                   echo "<li><a href='../../Technologie-web/php/deconnexion.php'>Déconnxion</a></li>"
+                    if (isset($_SESSION["action"]))
+                        echo "<li><a href='../../Technologie-web/php/deconnexion.php'>Déconnxion</a></li>"
                     ?>
                 </ul>
                 <h1 class="logo">Sons yam</h1>
             </div>
         </nav>
+        <script src="../../Technologie-web/scripts/message.js"></script>
     </header>
 </body>
+
 </html>
