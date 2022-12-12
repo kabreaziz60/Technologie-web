@@ -2,8 +2,6 @@
 include_once "../../Technologie-web/db/connexion.php";
 // header('Content-Type: application/json'); 
 // $data = json_decode($_POST["id"]);
-if (isset($_POST['id'])) {
-    $id = $_POST['id'];
     $sqlPost = "SELECT * FROM `posts`";
     $sqlUser = "SELECT * FROM `users`";
 
@@ -32,6 +30,4 @@ if (isset($_POST['id'])) {
         var_dump('error in getUserMessage');
         echo 'error';
     }
-} else {
-    echo 'non';
-}
+

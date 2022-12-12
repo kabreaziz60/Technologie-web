@@ -2,7 +2,7 @@
 	box-sizing:border-box;
 }
 body{
-	background-color:#abd9e9;
+	background-color: rgba(128, 128, 128, 0.116) !important;
 	font-family:Arial;
 }
 #container{
@@ -214,7 +214,7 @@ main footer img{
 	height:30px;
 	cursor:pointer;
 }
-main footer a{
+main footer button{
 	text-decoration:none;
 	text-transform:uppercase;
 	font-weight:bold;
