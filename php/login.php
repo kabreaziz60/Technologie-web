@@ -9,9 +9,10 @@ if ($_POST["email"] && $_POST["password"]) {
     $user = mysqli_query($link, "SELECT * FROM users WHERE email='$email' AND password='$password'");
     if(mysqli_num_rows($user) > 0){
         while($row = mysqli_fetch_assoc($user)) {
-         var_dump($row) ;
          $res['success'] = 'connexion reussi';
          $res['data'] = $row;
+            $_SESSION["action"] = 'login';
+            $_SESSION["data"] = $row;
          header("Location: /Technologie-web/");
         }
     } else {
@@ -21,5 +22,5 @@ if ($_POST["email"] && $_POST["password"]) {
 }
 
 $_SESSION["res"]=$res;
-$_SESSION["action"]='login';
+
 

@@ -1,4 +1,4 @@
-<?php include_once '../Technologie-web/php/getAllUser.php' ?>
+<?php include_once '../Technologie-web/php/getAllUser.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,11 +18,12 @@
             </header>
             <ul>
                 <?php
+                if (isset($_SESSION['data'])) $user = json_encode($_SESSION['data']);
                 while ($rowUser = mysqli_fetch_assoc($result)) {
                     $name = $rowUser['name'];
                     $firstname = $rowUser['firstname'];
                     $id = $rowUser['id'];
-                    echo "<li onclick='getUserMessage($id)'>
+                    echo "<li onclick='getUserMessage($id, $user)'>
                     <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_01.jpg' alt=''>
                     <div>
                         <h2>$name . $firstname </h2>
@@ -33,7 +34,7 @@
                     </div>
                 </li>";
                 }
-                
+
                 ?>
             </ul>
         </aside>
@@ -70,13 +71,13 @@
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                     </div>
                 </li>
-                
+
             </ul>
             <footer>
-                <textarea placeholder="Type your message"></textarea>
+                <textarea class="sendInput" placeholder="Type your message" onchange="send()"></textarea>
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_picture.png" alt="">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_file.png" alt="">
-                <a href="#">Send</a>
+                <button class="sendBtn" onclick="sendClick()">Send</button>
             </footer>
         </main>
     </div>
