@@ -19,7 +19,6 @@
            $val
             </div>";
         }
-
     }
     session_destroy();
     ?>
@@ -29,15 +28,15 @@
                 <div class="text">
                     <h1 class="mb">
                         Bienvenue sur <br />
-                        <span>Sons yam</span>
+                        <span>Sonsyam</span>
                     </h1>
 
                     <p class="mb">
                         Discuter en tout sérénité avec vos camarades de classe
                     </p>
 
-                    <a href="#" onclick="document.getElementById('id01').style.display='block'" class="btn mt">Se connecter</a>
-                    <a href="#" onclick="document.getElementById('id02').style.display='block'" class="btn mt">S'inscrire</a>
+                    <a href="#" onclick="document.getElementById('id01').style.display='block'" class="btn mt">Connexion</a>
+                    <a href="#" onclick="document.getElementById('id02').style.display='block'" class="btn mt">Inscription</a>
                 </div>
 
                 <div class="visual">
@@ -60,14 +59,10 @@
                     <br />
 
                     <div class="client">
-                        <img src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/client1.jpg" alt="" />
-                        <h2 class="secondary">Exelent Training</h2>
+                        <img src="../../Technologie-web/assets/img//user.svg" alt="" />
+                        <h2 class="secondary">Abdoul Kabre</h2>
                         <p class="tertiary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-                            quas voluptatem ad, repudiandae voluptates odio deleniti
-                            reiciendis in veniam quidem expedita maxime error fugit. Pariatur
-                            quasi sunt aut id. Lorem, ipsum dolor sit amet consectetur
-                            adipisicing elit. Neque, officiis.
+                            je suis Abdoul kabré etudiant en 2ème année a l'IFOAD. Ravie de rejoindre se reseau social
                         </p>
                     </div>
                 </div>
@@ -82,13 +77,13 @@
         <footer class="footer">
             <div class="container flex">
                 <p class="tertiary">
-                    &copy; 2022 Sons yam. All Rights Reserved.
+                    &copy; 2022 Sonsyam. All Rights Reserved.
                 </p>
             </div>
         </footer>
 
         <!--   BTN   -->
-        <a href="https://www.youtube.com/watch?v=H_rRlMSbarg" class="send-fixer-btn" target="__blank">
+        <a href="../../Technologie-web/pages/message.php" class="send-fixer-btn">
             <img width="50" height="50" src="../../Technologie-web/assets/img/s4.svg" />
         </a>
 
@@ -100,7 +95,8 @@
     <footer>
 
     </footer>
-    
+
+
     <!-- login modal -->
     <div id="id01" class="modal">
 
@@ -109,7 +105,7 @@
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                 <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
             </div>
-            
+
             <div class="container">
                 <h3 class="auth-title">Connexion</h3>
                 <label for="uname"><b>Email</b></label>
@@ -130,6 +126,8 @@
             </div>
         </form>
     </div>
+
+
     <!-- register modal -->
     <div id="id02" class="modal">
 
@@ -138,7 +136,7 @@
                 <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
                 <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
             </div>
-            
+
             <div class="container">
                 <h3 class="auth-title">Inscription</h3>
                 <label for="uname"><b>Nom</b></label>
@@ -151,7 +149,7 @@
                 <input type="email" placeholder="Entre votre email" name="email" required>
 
                 <label for="psw"><b>Mot de passe</b></label>
-                <input type="password" placeholder="Entre votre email" name="password" required>
+                <input type="password" placeholder="Entre votre Mot de passe" name="password" required>
 
                 <button type="submit">Inscription</button>
             </div>

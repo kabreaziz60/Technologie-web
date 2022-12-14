@@ -1,8 +1,14 @@
 <?php
 //db info
-$user = "root";
-$mdp = "";
-$db= "somsyam1"; // create this in mysql
+
+
+//credential to add *********************************
+$user = "root"; // custom mysql username
+$mdp = ""; // Custom mysql password
+//end credential to add *********************************
+
+
+$db= "somsyam"; 
 $server = "localhost";
 $users = "users";
 $posts = "posts";
@@ -14,7 +20,7 @@ if($link) {
     // enable error reporting
     $testDb = mysqli_select_db($link, $db);
     if(empty($testDb)){
-        $dbCr = "create database somsyam1";
+        $dbCr = "create database somsyam";
         $check = mysqli_query($link, $dbCr);
         if(!$check){
             echo "database create error";

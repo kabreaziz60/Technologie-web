@@ -20,10 +20,8 @@
                     <span class="line line3"></span>
                 </div>
                 <ul class="menu-items">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Message</a></li>
-                    <li><a href="#">A propos</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="../../Technologie-web">Accueil</a></li>
+                    <li><a href="../../Technologie-web/pages/message.php">Message</a></li>
                     <?php
                     if (isset($_SESSION["action"]))
                         echo "<li><a href='../../Technologie-web/php/deconnexion.php'>Déconnxion</a></li>"

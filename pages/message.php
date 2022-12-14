@@ -18,21 +18,29 @@
             </header>
             <ul>
                 <?php
-                if (isset($_SESSION['data'])) $user = json_encode($_SESSION['data']);
+                if (isset($_SESSION['data'])) {
+                    $user = json_encode($_SESSION['data']);
+                } else {
+                    $res['error'] = 'Vous devez vous connectez pour accéder a la section message';
+                    $_SESSION["res"] = $res;
+                    header("Location: ../../Technologie-web");
+                }
                 while ($rowUser = mysqli_fetch_assoc($result)) {
                     $name = $rowUser['name'];
                     $firstname = $rowUser['firstname'];
                     $id = $rowUser['id'];
-                    echo "<li onclick='getUserMessage($id, $user)'>
-                    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_01.jpg' alt=''>
-                    <div>
-                        <h2>$name . $firstname </h2>
-                        <h3>
-                            <span class='status orange'></span>
-                            offline
-                        </h3>
-                    </div>
-                </li>";
+                    if ($name !== $_SESSION['data']["name"]) {
+                        echo "<li class='userInfo' onclick='getUserMessage($id, $user)'>
+                        <img src='../../Technologie-web/assets/img/male_user.svg' alt='user' width=40 height=40/>
+                        <div>
+                            <h2>$name . $firstname </h2>
+                            <h3>
+                                <span class='status orange'></span>
+                                En ligne
+                            </h3>
+                        </div>
+                    </li>";
+                    }
                 }
 
                 ?>
@@ -40,21 +48,18 @@
         </aside>
         <main>
             <header>
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_01.jpg" alt="">
+                <img class="userPic" src='../../Technologie-web/assets/img/male_user.svg' alt="user" width=40 height=40 />
                 <div class="recepter">
                     <span class="test"></span>
                 </div>
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_star.png" alt="">
             </header>
             <ul id="chat">
-
+                <span class="msg-after-click">Veuillez cliquer sur un utilisateur pour commencer une discussion</span>
             </ul>
             <footer>
                 <div class="footer-container">
-                    <textarea class="sendInput" placeholder="Type your message"></textarea>
-                    <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_picture.png" alt="">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_file.png" alt=""> -->
-                    <button class="sendBtn" onclick="sendClick()">Send</button>
+                    <textarea class="sendInput" placeholder="Votre message"></textarea>
+                    <button class="sendBtn" onclick="sendClick()"> <img width="50" height="50" src="../../Technologie-web/assets/img/paper_plane.svg" /></button>
 
                 </div>
             </footer>

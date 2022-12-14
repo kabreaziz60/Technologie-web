@@ -7,8 +7,9 @@ let recepter
 let data;
 let message;
    
+
+
 const getUserMessage = async (id, user) => {
-    // console.log(user.id);
     _id = id;
   _idUser = user?.id;
    recepter = document.querySelector(".recepter");
@@ -18,13 +19,10 @@ const getUserMessage = async (id, user) => {
     "Content-Type": "application/x-www-form-urlencoded",
   };
 
-  // let bodyContent = "id=" + id;
-
   let response = await fetch(
     "http://localhost/Technologie-web/php/getUserMessage.php",
     {
       method: "POST",
-      // body: bodyContent,
       headers: headersList,
     }
   );
@@ -45,7 +43,7 @@ const getUserMessage = async (id, user) => {
                         <div class="entete">
                             <span class="status green"></span>
                             <h2>${userOfmsg(users, post.posterId)}</h2>
-                            <h3>10:12AM, Today</h3>
+                            <h3>Aujourd'hui</h3>
                         </div>
                         <div class="triangle"></div>
                         <div class="message">
@@ -84,7 +82,10 @@ const allData = async (id) => {
 
   data = await response.json();
   return data
-  };
+};
+  
+
+
   const sendClick = async () => {
   message = document.querySelector(".sendInput").value;
    const button = document.querySelector(".sendBtn");
@@ -121,9 +122,8 @@ const allData = async (id) => {
                         <div class="entete">
                             <span class="status green"></span>
                             <h2>${userOfmsg(users, post.posterId)}</h2>
-                            <h3>10:12AM, Today</h3>
+                            <h3>Aujourd'hui</h3>
                         </div>
-                        <div class="triangle"></div>
                         <div class="message">
                             ${post.message}
                         </div>
@@ -137,12 +137,16 @@ const allData = async (id) => {
        }
 };
 
+
+
 const realtime =  async() => {
  allData().then(res => {
      mapData(res)
 
   })
 }
+
+
 const mapData = async (p) => {
    msg.innerHTML = p.posts
      ?.map(function (post) {
@@ -154,7 +158,7 @@ const mapData = async (p) => {
                         <div class="entete">
                             <span class="status green"></span>
                             <h2>${userOfmsg(users, post.posterId)}</h2>
-                            <h3>10:12AM, Today</h3>
+                            <h3>Aujourd'hui</h3>
                         </div>
                         <div class="triangle"></div>
                         <div class="message">

@@ -260,6 +260,7 @@ body {
 
 .logo {
   cursor: pointer;
+      color: #29a396;
 }
 
 .logo img {
@@ -295,6 +296,7 @@ body {
 
 /* Buttons */
 .btn {
+      margin-right: 30px;
   padding: 10px 28px;
   background: var(--clr-primary);
   border-radius: 40px;
