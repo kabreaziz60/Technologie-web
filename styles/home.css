@@ -22,7 +22,7 @@ input[type=text], input[type=password],input[type=email] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
+  background-color: #ff812c;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -133,7 +133,7 @@ span.psw {
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&display=swap");
 /* Base */
 :root {
-  --clr-primary: #29a396;
+  --clr-primary: #ff812c;
 }
 
 *,
@@ -260,7 +260,7 @@ body {
 
 .logo {
   cursor: pointer;
-      color: #29a396;
+      color: #ff812c;
 }
 
 .logo img {
@@ -285,7 +285,7 @@ body {
 }
 
 .nav-item:hover a {
-  color: #29a396;
+  color: #ff812c;
   transition: 0.3s linear;
 }
 
@@ -308,7 +308,7 @@ body {
 }
 
 .btn:hover {
-  background: #165f56;
+  background: #c76321;
   transition: 0.3s linear;
 }
 
@@ -318,9 +318,10 @@ body {
   color: #ccc;
   transition: 0.3s linear;
 }
+  
 
 .btn-2:hover {
-  color: #29a396;
+  color: #c76321;
 }
 
 /* End Buttons */

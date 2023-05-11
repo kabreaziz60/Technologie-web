@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../Technologie-web/styles/home.css">
-    <title>Document</title>
+    <title>tâches-service</title>
 </head>
 
 <body class="home-container">
@@ -28,11 +28,11 @@
                 <div class="text">
                     <h1 class="mb">
                         Bienvenue sur <br />
-                        <span>Sonsyam</span>
+                        <span>tâches</span>
                     </h1>
 
                     <p class="mb">
-                        Discuter en tout sérénité avec vos camarades de classe
+                        Organiser votre journée de toujours
                     </p>
 
                     <a href="#" onclick="document.getElementById('id01').style.display='block'" class="btn mt">Connexion</a>
@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="visual">
-                    <img src="../../Technologie-web/assets/img/s4.png" alt="" />
+                    <img src="../../Technologie-web/assets/img/s4.gif" alt="" />
                 </div>
             </div>
         </header>
@@ -51,7 +51,7 @@
             <div class="container flex">
                 <div class="text">
                     <h2 class="primary">
-                        Message envoyer
+                        Créer des tâches
                     </h2>
 
                     <br />
@@ -60,9 +60,9 @@
 
                     <div class="client">
                         <img src="../../Technologie-web/assets/img//user.svg" alt="" />
-                        <h2 class="secondary">Abdoul Kabre</h2>
+                        <h2 class="secondary">sawadogo XXXX</h2>
                         <p class="tertiary">
-                            je suis Abdoul kabré etudiant en 2ème année a l'IFOAD. Ravie de rejoindre se reseau social
+                            je suis sawadogo XXXX etudiant en 2ème année a l'IFOAD. Ravie d'utiliser cet outil
                         </p>
                     </div>
                 </div>
@@ -77,15 +77,12 @@
         <footer class="footer">
             <div class="container flex">
                 <p class="tertiary">
-                    &copy; 2022 Sonsyam. All Rights Reserved.
+                    &copy; 2022 tâches. All Rights Reserved.
                 </p>
             </div>
         </footer>
 
-        <!--   BTN   -->
-        <a href="../../Technologie-web/pages/message.php" class="send-fixer-btn">
-            <img width="50" height="50" src="../../Technologie-web/assets/img/s4.svg" />
-        </a>
+      
 
         <!-- End Footer -->
 

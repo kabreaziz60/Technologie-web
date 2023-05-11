@@ -11,7 +11,7 @@ $mdp = ""; // Custom mysql password
 $db= "somsyam"; 
 $server = "localhost";
 $users = "users";
-$posts = "posts";
+$posts = "task";
 mysqli_report(MYSQLI_REPORT_OFF);
 
 $link = mysqli_connect($server, $user, $mdp, "");
@@ -20,7 +20,7 @@ if($link) {
     // enable error reporting
     $testDb = mysqli_select_db($link, $db);
     if(empty($testDb)){
-        $dbCr = "create database somsyam";
+        $dbCr = "create database tasks";
         $check = mysqli_query($link, $dbCr);
         if(!$check){
             echo "database create error";
@@ -51,17 +51,17 @@ if(!$exists)
     die();
    }
 }
-$tablePosts = "select * from posts";
+$tablePosts = "select * from task";
 $exists = mysqli_query($link, $tablePosts);
 
 if(!$exists)
 {
     var_dump("passe");
-   $usersTab = "create table posts(
+   $usersTab = "create table task(
     id int(100) NOT NULL AUTO_INCREMENT,
-    message  varchar (255)  NOT NULL,
-    posterId  int(100)  NOT NULL,
-    recepterId  int(100)  NOT NULL,
+    title  varchar (255)  NOT NULL,
+    description  varchar (255)  NOT NULL,
+    userId  int(100)  NOT NULL,
     status  int (255)  NOT NULL DEFAULT 0,
     PRIMARY KEY(id)
    )";
